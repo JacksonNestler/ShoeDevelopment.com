@@ -1,3 +1,4 @@
+<?php require APP_ROOT . 'index.php'; ?>
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
     <?php print_r($pages); ?>
     <?php if(empty($pages)): ?>

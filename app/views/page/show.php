@@ -1,4 +1,3 @@
- <?php require APP_ROOT.'/views/page/show.php'; ?>
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
     
     <?php if(!$page): ?>
@@ -9,5 +8,5 @@
 
     <?php endif; ?>
 
-
+ <?php require APP_ROOT.'/views/page/show.php'; ?>
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

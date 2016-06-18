@@ -1,7 +1,7 @@
 <?php
 
 require 'app/start.php';
-require VIEW_ROOT.'/home.php';
+
 /**
 $pages = $db->query("
     SELECT id, label, slug
@@ -15,4 +15,6 @@ $query = $db->prepare("
 if (!$query->execute())
   die('Query Failed');
 $pages = $query->fetchAll(PDO::FETCH_ASSOC);
+
+require VIEW_ROOT.'/home.php';//Needs to be after the $pages var decleration to have it included in it's scope.
 ?>
